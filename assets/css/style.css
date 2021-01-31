@@ -1,0 +1,569 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*######## Header ##########*/
+
+header .frist-nav{
+    display: grid;
+    padding: 20px 0;
+    justify-content: space-around; 
+    background-color: #012231;
+}
+
+header .frist-nav h1{
+    margin-left: 20px;
+    color: #289CD5;
+}
+
+header .frist-nav p{
+    color: #fff;
+}
+
+nav{
+    display: grid;
+    justify-content: space-around;
+    border-top: 2px solid #aaa7a7;
+    border-bottom: 2px solid #aaa7a7;
+    padding: 10px 0 10px 0;
+    background-color: #012231;
+    color: #fff;
+}
+
+header .left ul{
+    display: grid;
+    list-style: none;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+header .left ul a{
+    text-decoration: none;
+    margin: 10px 20px ;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+header .left ul a:hover{
+    color: #289CD5;
+    transition: all .3s ease-in-out;
+}
+
+header .left ul li{
+    margin-bottom: 10px;
+}
+
+header .right ul{
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+
+header .right ul a{
+    text-decoration: none;
+    margin: 10px 20px ;
+    font-size: 20px;
+    color: #fff;
+}
+
+header .right ul a:hover{
+    color: #289CD5;
+    transition: all .3s ease-in-out;
+}
+
+header .content{
+    min-height: 80vh;
+    background-image: url(../images/header.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header .content .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255,0.7);
+    border-radius: 10px;
+    width:60%;
+    height: 30%;
+    text-align: center;
+    color: #2387b3;
+}
+
+header .content .text p{
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1aa5e2;
+    
+}
+
+header .content .text div{
+    font-weight: bold;
+}
+
+header .content .text h1{
+    margin:20px 0 ;
+    font-size: 40px
+}
+
+@media screen and (min-width:576px){
+    header .left ul{
+        display: flex;
+    }
+    
+    header .right ul{
+        margin-left: 80px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    
+    nav ul{
+        margin: 0 40px;
+    }
+
+}
+
+/*#########  Tours  ##########*/
+
+.tour{
+    margin: 40px 0 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.honey{
+    text-align: center;
+}
+
+.honey h1{
+    margin: 50px 0;
+    color:#2387b3;
+}
+
+.honey p{
+    font-size: 25px;
+    color: #012231;
+}
+
+.honey a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    border:2px solid #2387b3; 
+    border-radius: 5px;
+    margin: 30px 0;
+    display:inline-block;
+    padding: 15px 50px;
+    background-color: #2387b3;
+    color: #fff;
+}
+
+.honey a:hover{
+    border:2px solid #2387b3;
+    background-color: #fff;
+    color: #2387b3;
+    transition: all .5s ease-in-out;   
+}
+
+.honey div p{
+    margin-top: 20px;
+    color: #012231;
+}
+
+.honey div span{
+    font-size: 25px;
+    margin-bottom: 50px;
+    display: inline-block;
+    color: #012231;
+}
+
+.honey-pic img{
+    width: 100%;
+    min-height: 100%;
+}
+
+.family{
+    text-align: center;
+}
+
+.family h1{
+    margin: 50px 0;
+    color:#2387b3;
+}
+
+.family p{
+    font-size: 25px;
+    color: #012231;
+}
+
+.family a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    border:2px solid #2387b3; 
+    border-radius: 5px;
+    margin: 30px 0;
+    display:inline-block;
+    padding: 15px 50px;
+    background-color: #2387b3;
+    color: #fff;
+}
+
+.family a:hover{
+    border:2px solid #2387b3;
+    background-color: #fff;
+    color: #2387b3;
+    transition: all .5s ease-in-out;   
+}
+
+.family div p{
+    margin-top: 20px;
+    color: #012231;
+}
+
+.family div span{
+    font-size: 25px;
+    margin-bottom: 50px;
+    display: inline-block;
+    color: #012231;
+}
+
+.family-pic img{
+    width: 100%;
+    min-height: 100%;
+}
+
+@media screen and (min-width:992px) {
+    .tour .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .container div:nth-of-type(1) {
+        order: 2;
+    }
+    .container div:nth-of-type(2) {
+        order: 1;
+    }
+    .container div:nth-of-type(3) {
+        order: 3;
+    }
+    .container div:nth-of-type(4) {
+        order: 4;
+    }
+    
+    .honey{
+        margin: auto 0px auto 30px;
+    }
+    
+    .family{
+        margin: auto 30px auto 0px;
+    }
+}
+
+/*#######  feature  ########*/
+
+.adventure-pic img,.summer-pic img{
+    width: 100%;
+    min-height: 100%;
+}
+
+.adventure{
+    text-align: center;
+}
+
+.adventure .bg{
+    background-color: rgba(196, 190, 190, 0.4);
+    margin: 25px auto;
+    padding: 15px 0 0 0;
+    color: #fff;
+}
+
+.adventure .bg hr{
+    width: 80%;
+    margin-left: 10%;
+    border: 2px solid #fff;
+}
+
+.adventure .bg h1{
+    margin: 15px 0;
+    color: #2497ca;
+}
+
+.adventure p{
+    font-size: 25px;
+}
+
+.adventure a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+/*    border:2px solid #fff ;*/
+    border-radius: 5px;
+    margin: 30px 0;
+    display:inline-block;
+    padding: 15px 50px;
+    color: #fff;
+    background-color: #2387b3;
+}
+
+.adventure a:hover{
+    border:2px solid #2387b3;
+    background-color: #fff;
+    color: #2387b3;
+    transition: all .5s ease-in-out;   
+}
+
+.adventure div p{
+    margin-top: 20px;
+}
+
+.adventure div span{
+    font-size: 25px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.summer{
+    text-align: center;
+}
+
+.summer .bg{
+    background-color: rgba(84, 181, 224, 0.4);
+    margin: 25px auto;
+    padding: 15px 0 0 0;
+    color: #fff;
+}
+
+.summer .bg hr{
+    width: 80%;
+    margin-left: 10%;
+    border: 2px solid #fff;
+}
+
+.summer .bg h1{
+    margin: 15px 0;
+    color: #2497ca;
+}
+
+.summer p{
+    font-size: 25px;
+}
+
+.summer a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 30px 0;
+    display:inline-block;
+    padding: 15px 50px;
+    color: #fff;
+    background-color: #2387b3;
+}
+
+.summer a:hover{
+    border:2px solid #2387b3;
+    background-color: #fff;
+    color: #2387b3;
+    transition: all .5s ease-in-out;   
+}
+
+.summer div p{
+    margin-top: 20px;
+}
+
+.summer div span{
+    font-size: 25px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.feature .container>a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2387b3;
+    border:2px solid #2387b3 ;
+    border-radius: 5px;
+    margin: 30px 0;
+    display:inline-block;
+    padding: 15px 40px;
+}
+
+.feature .container>a:hover{
+    border:2px solid #2387b3;
+    background-color: #fff;
+    color: #2387b3;
+    transition: all .5s ease-in-out;   
+}
+
+@media screen and (min-width:992px){
+    
+    .adventure{
+    position: relative;
+    margin-bottom: 25px;    
+}
+
+.adventure .bg{
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    top: 10%;
+    left: 10%;
+}
+    
+.summer{
+    position: relative;
+}
+
+.summer .bg{
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    top:80px;
+    left: 10%;
+}    
+    
+}
+
+/*######  gallary  #######*/
+
+.gallary{
+    margin:0 auto;
+    text-align: center;
+    margin-top: 40px ;
+}
+
+.gallary img:hover{
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+}
+
+@media screen and (min-width:576px){
+    .gallary{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+/*#######  About  ########*/
+
+.about {
+    background-color: #012231;
+    display: grid;
+    padding-bottom: 20px;
+}
+
+.about-us, .contact-us, .search{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px
+}
+
+.about-us h3, .contact-us h3, .search h3{
+    margin-bottom: 20px;
+    color: #289CD5;
+    font-size: 22px;
+}
+
+.about-us p{
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact-us i{
+    font-size: 25px;
+}
+
+.contact-us ul{
+    list-style: none;
+    display: flex;
+}
+
+.contact-us ul li{
+    margin-right: 30px;
+}
+
+.contact-us ul a{
+    color: #fff;
+}
+
+.contact-us ul a:hover{
+    color: #289CD5;
+}
+
+.search input{
+    margin-right: 20px;
+    padding: 5px 20px;
+}
+
+.search i{
+    font-size: 25px;
+    color: #fff;
+}
+
+.search i:hover{
+    color: #289CD5;
+}
+
+@media screen and (min-width:576px){
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
+@media screen and (min-width:992px){
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}    
+
+/*#####  footer  ####*/
+footer{
+    height:60px;
+    background-color: #012231;
+    text-align: center;
+}
+
+footer h3{
+    padding-top: 20px;
+    color: #289CD5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
